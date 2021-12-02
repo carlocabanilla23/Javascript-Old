@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+
+<head>
+	<title>Guessing Game</title>
+	<script>
+	var randomNumber = Math.floor(Math.random() * 100 +1);
+	console.log(randomNumber);
+	var guessNumber;
+	var count = 0;
+	
+	function start(){
+	
+	 guessNumber = Number(prompt("Enter Number"));
+		guessOn();
+	}
+	
+
+	function guessOn(){
+			count += 1;
+			var rank = [" ","Excellent","Very Good","Good","Fair","Lucky"];
+			
+			
+			if (count < 5){
+					
+					if(guessNumber == randomNumber){
+						alert(rank[count] + " You Tried "+ count + " Times so Guess the Number" );
+							
+					//	alert("you tried "+ count + " to guess the number ");
+					}
+						else if(guessNumber > randomNumber){
+						guessNumber = " ";
+						guessNumber = Number(prompt("Enter a Smaller number"));
+						guessOn();
+					}
+					else if (guessNumber < randomNumber){
+						guessNumber = " ";
+						guessNumber = Number(prompt("Enter a Higher number"));
+						guessOn();		
+				
+					}
+					
+			}else if (count = 5){
+				alert("out of tries please try again");
+				location.reload();
+				count =0 ;
+					
+			}
+					
+					
+	}
+
+</script>
+	<style type="text/css">
+		body{
+			background-color: #3d3d3d;
+		}
+		#box1{
+		border: 3px solid black;
+			background-color: #dbdbdb;
+			height: 400px;
+			width: 700px;
+		}
+	
+	</style>
+
+</head>
+
+
+<body>
+	<center style="margin-top: 150px;">
+		<div id="box1">
+				<h1>Guessing Game</h1>
+				<h2>Try To Guess A Number From 1 to 100</h2><br/><br/><br/><br/><br/>
+				<button onclick= "start()" style = "height: 100px;width: 300px;">
+					<h1>Click to Start</h1>
+				</button>
+		</div>
+	</center>
+
+</body>

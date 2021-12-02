@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Animals>
+    <Dogs type="Golden Retriever">
+        <Dog>
+            <name>Shadow</name>
+            <age>1.5</age>
+        </Dog>
+        <Dog>
+            <name>Speedie</name>
+            <age>3</age>
+        </Dog>
+        <Dog>
+            <name>StarFire</name>
+            <age>4</age>
+        </Dog>
+    </Dogs>
+    <Dogs type="German Shephard">
+        <Dog>
+            <name>Hulkie</name>
+            <age>2.5</age>
+        </Dog>
+        <Dog>
+            <name>Bellie</name>
+            <age>6</age>
+        </Dog>
+    </Dogs>
+    <Cats type="American Bobtail">
+        <Cat>
+            <name>Showie</name>
+            <age>5</age>
+        </Cat>
+        <Cat>
+            <name>Willie</name>
+            <age>2</age>
+        </Cat>
+    </Cats>
+    <Cats type="Balinese">
+        <Cat >
+            <name id="1">Mattie</name>
+            <age>2.5</age>
+        </Cat>
+        <Cat >
+            <name id="2">Chewie</name>
+            <age>1</age>
+        </Cat>
+        <Cat>
+            <name  id="3">Talkie</name>
+            <age>4</age>
+        </Cat>
+    </Cats>
+</Animals>
